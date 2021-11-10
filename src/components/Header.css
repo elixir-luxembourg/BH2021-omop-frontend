@@ -6,7 +6,7 @@
     background-color: #282C52;
     color: white;
     position: relative;
-    overflow: visible;
+    margin-bottom: 4em;
 }
 
 .header a {

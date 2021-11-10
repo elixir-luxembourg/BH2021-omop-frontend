@@ -1,0 +1,58 @@
+.queryContainer {
+    text-align: left;
+    padding: 4em 4.5em;
+    color: #282C52;
+}
+
+.queryContainer__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3em;
+
+}
+
+.queryBoxGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4.5em;
+}
+
+.queryBox {
+    background-color: #F1F8F6;
+    text-align: center;
+    padding: 2em 4em;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.queryBox__title {
+    margin-bottom: 0.5em;
+    font-size: 1.6rem;
+}
+
+.inputGroup {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSubmitButtonGroup {
+    margin-top: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 3em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-color: #F47D20;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

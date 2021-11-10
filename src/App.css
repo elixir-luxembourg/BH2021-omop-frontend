@@ -1,17 +1,10 @@
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #f4f7fa;
-}
 
 .App {
     text-align: center;
     max-width: 1440px;
     margin: auto;
+    background-color: white;
+    min-height: 100vh;
 }
 
 .App-logo {
