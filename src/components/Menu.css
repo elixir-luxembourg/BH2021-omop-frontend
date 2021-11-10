@@ -1,0 +1,27 @@
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 4em;
+}
+
+.menu__item {
+    position: relative;
+    padding: 0 0.3em;
+}
+
+.menu__item:not(.active):hover a {
+    color: #F47D20;
+}
+
+.menu__item.active::after {
+    content: "";
+    border: 1px solid currentColor;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+}
+

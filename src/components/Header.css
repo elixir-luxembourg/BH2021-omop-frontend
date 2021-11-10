@@ -1,0 +1,84 @@
+
+.header {
+    font-family: 'Geo', sans-serif;
+    padding: 2em 4.5em 4em 4.5em;
+    text-align: left;
+    background-color: #282C52;
+    color: white;
+    position: relative;
+    overflow: visible;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__title {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: normal;
+}
+
+.header__subtitle {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+@media screen and (max-width: 65rem) {
+    .lightIcons {
+        display: none;
+    }
+}
+
+.lightIcons {
+    position: absolute;
+    right: 35em;
+    top: 3em;
+}
+
+.lightIcons__torch,
+.lightIcons__chart,
+.lightIcons__bottle,
+.lightIcons__clinical {
+    position: absolute;
+}
+
+.lightIcons__torch {
+    width: 20em;
+    top: 4em;
+    left: 0;
+}
+
+.lightIcons__clinical {
+    top: 12em;
+    left: 22em;
+    width: 8em;
+
+}
+
+.lightIcons__bottle {
+    top: 6em;
+    left: 25em;
+    width: 3em;
+}
+
+.lightIcons__chart {
+    width: 5em;
+    top: 0;
+    left: 20em;
+}
+
+.header__bottomImage {
+    position: absolute;
+    bottom: -61px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+
