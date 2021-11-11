@@ -1,0 +1,22 @@
+.networks__list {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    gap: 0.5em;
+    color: #282C52;
+    font-size: 1.2rem;
+    margin-bottom: 4em;
+}
+
+.follow__title {
+    margin-bottom: 1em;
+}
+
+.network__item, .network__item a:hover, .network__item a:visited{
+    padding: 0.1em 0;
+    font-weight: bold;
+    color: #52A38A;
+}
+
+.follow__footer {
+
+}
