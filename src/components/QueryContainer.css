@@ -4,6 +4,12 @@
     color: #282C52;
 }
 
+@media screen and (max-width: 65rem) {
+    .queryContainer {
+        padding: 4em 2em;
+    }
+}
+
 .queryContainer__title {
     font-size: 2rem;
     text-transform: uppercase;
