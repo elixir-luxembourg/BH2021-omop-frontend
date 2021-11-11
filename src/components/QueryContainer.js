@@ -6,14 +6,20 @@ function QueryBoxMeasurement() {
     return <form className={"queryBox"}>
         <img className={"queryBox__icon"} src={clipboard} alt={"clipboard-icon"}/>
         <h3 className={"queryBox__title"}>Having a specific measurement</h3>
-        <div className={"inputGroup"}><label>measurement</label>
-            <select>
+        <div className={"inputGroup"}>
+            <label>measurement</label>
+            <select className={"inputGroup__select"}>
                 <option>Oxygen saturation</option>
                 <option>Heart rate</option>
             </select>
         </div>
         <div className={"inputGroup"}>
-            <p><input type={"checkbox"}/> <label>include descendants</label></p>
+            <p>
+                <label className={"inputGroup__labelCheckBox"}>include descendants
+                    <input className={"inputGroup__checkbox"} type={"checkbox"}/>
+                    <span className={"inputGroup__checkmark"}></span>
+                </label>
+            </p>
         </div>
         <div className={"inputSubmitButtonGroup"}>
             <input className={"button"} type={"submit"} value={"search"}/>
@@ -28,17 +34,22 @@ function QueryBoxValue() {
         <div className={"inputGroup"}>
 
             <label>measurement</label>
-            <select>
+            <select className={"inputGroup__select"}>
                 <option>Oxygen saturation</option>
             </select>
         </div>
         <div className={"inputGroup"}>
 
             <label>value</label>
-            <input type={"number"}/>
+            <input className={"inputGroup__input"} type={"number"}/>
         </div>
         <div className={"inputGroup"}>
-            <p><input type={"checkbox"}/> <label>include descendants</label></p>
+            <p>
+                <label className={"inputGroup__labelCheckBox"}>include descendants
+                    <input className={"inputGroup__checkbox"} type={"checkbox"}/>
+                    <span className={"inputGroup__checkmark"}></span>
+                </label>
+            </p>
         </div>
         <div className={"inputSubmitButtonGroup"}>
             <input className={"button"} type={"submit"} value={"search"}/>
