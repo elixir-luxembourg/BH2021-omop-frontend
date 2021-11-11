@@ -72,7 +72,7 @@ function QueryBoxDisease() {
         </div>
         <div className={"inputGroup"}>
 
-            <label>measurement</label>
+            <label>characteristic</label>
             <select className={"inputGroup__select"}>
                 <option>Gender</option>
             </select>
