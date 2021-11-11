@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/BH2021-omop-frontend/static/css/main.9b15e131.chunk.css",
-    "main.js": "/BH2021-omop-frontend/static/js/main.4c3aefbf.chunk.js",
-    "main.js.map": "/BH2021-omop-frontend/static/js/main.4c3aefbf.chunk.js.map",
-    "runtime-main.js": "/BH2021-omop-frontend/static/js/runtime-main.6e7c989f.js",
-    "runtime-main.js.map": "/BH2021-omop-frontend/static/js/runtime-main.6e7c989f.js.map",
+    "main.css": "/BH2021-omop-frontend/static/css/main.aefd49b4.chunk.css",
+    "main.js": "/BH2021-omop-frontend/static/js/main.c83951af.chunk.js",
+    "main.js.map": "/BH2021-omop-frontend/static/js/main.c83951af.chunk.js.map",
+    "runtime-main.js": "/BH2021-omop-frontend/static/js/runtime-main.1487ba72.js",
+    "runtime-main.js.map": "/BH2021-omop-frontend/static/js/runtime-main.1487ba72.js.map",
     "static/js/2.9509c7d0.chunk.js": "/BH2021-omop-frontend/static/js/2.9509c7d0.chunk.js",
     "static/js/2.9509c7d0.chunk.js.map": "/BH2021-omop-frontend/static/js/2.9509c7d0.chunk.js.map",
-    "static/js/3.c4770e35.chunk.js": "/BH2021-omop-frontend/static/js/3.c4770e35.chunk.js",
-    "static/js/3.c4770e35.chunk.js.map": "/BH2021-omop-frontend/static/js/3.c4770e35.chunk.js.map",
+    "static/js/3.a165ac52.chunk.js": "/BH2021-omop-frontend/static/js/3.a165ac52.chunk.js",
+    "static/js/3.a165ac52.chunk.js.map": "/BH2021-omop-frontend/static/js/3.a165ac52.chunk.js.map",
     "index.html": "/BH2021-omop-frontend/index.html",
-    "static/css/main.9b15e131.chunk.css.map": "/BH2021-omop-frontend/static/css/main.9b15e131.chunk.css.map",
+    "static/css/main.aefd49b4.chunk.css.map": "/BH2021-omop-frontend/static/css/main.aefd49b4.chunk.css.map",
     "static/js/2.9509c7d0.chunk.js.LICENSE.txt": "/BH2021-omop-frontend/static/js/2.9509c7d0.chunk.js.LICENSE.txt",
     "static/media/QueryContainer.css": "/BH2021-omop-frontend/static/media/arrow.432c466a.svg",
     "static/media/bottle.b1525386.svg": "/BH2021-omop-frontend/static/media/bottle.b1525386.svg",
@@ -20,12 +20,14 @@
     "static/media/clipboard.a85eae0f.svg": "/BH2021-omop-frontend/static/media/clipboard.a85eae0f.svg",
     "static/media/dash.efd28fb2.svg": "/BH2021-omop-frontend/static/media/dash.efd28fb2.svg",
     "static/media/electrictorch.22aac381.svg": "/BH2021-omop-frontend/static/media/electrictorch.22aac381.svg",
-    "static/media/syringe.f684984a.svg": "/BH2021-omop-frontend/static/media/syringe.f684984a.svg"
+    "static/media/electrictorch_footer.8cb8a29d.svg": "/BH2021-omop-frontend/static/media/electrictorch_footer.8cb8a29d.svg",
+    "static/media/syringe.f684984a.svg": "/BH2021-omop-frontend/static/media/syringe.f684984a.svg",
+    "static/media/twitter.f505255f.svg": "/BH2021-omop-frontend/static/media/twitter.f505255f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e7c989f.js",
+    "static/js/runtime-main.1487ba72.js",
     "static/js/2.9509c7d0.chunk.js",
-    "static/css/main.9b15e131.chunk.css",
-    "static/js/main.4c3aefbf.chunk.js"
+    "static/css/main.aefd49b4.chunk.css",
+    "static/js/main.c83951af.chunk.js"
   ]
 }
