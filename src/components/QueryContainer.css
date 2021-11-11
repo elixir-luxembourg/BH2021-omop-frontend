@@ -19,10 +19,25 @@
     right: -0.7em;
 }
 
+.inputGroup__input,
+.inputGroup__select,
+.inputGroup__inputSmall {
+    border-radius: 9px;
+    border: 1px solid #C5D9D3;
+}
+
 .inputGroup__input {
     padding: 0.8em 1.5em;
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.inputGroup__inputSmall {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.8em 0.8em 0.8em 1.1em;
+    width: 4em;
+    height: 3em;
 }
 
 .inputGroup__select {
@@ -87,6 +102,13 @@
     display: block;
 }
 
+.inputGroup__inline {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .inputGroup__checkmark:after {
     left: 9px;
     top: 5px;
@@ -103,6 +125,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 4.5em;
+    align-items: flex-start;
 }
 
 .queryBox {
