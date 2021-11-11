@@ -6,6 +6,7 @@ export function Partners() {
         {label: "ELIXIR", target: "https://elixir-europe.org/", id: "elixir"},
         {label: "EGA", target: "https://ega-archive.org/", id: "ega"},
         {label: "BSC", target: "https://www.bsc.es/", id: "bsc"},
+        {label: "University of Leicester", target: "https://le.ac.uk/", id: "uol"},
     ]
 
     return <div>
