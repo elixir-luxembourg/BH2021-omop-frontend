@@ -190,3 +190,8 @@
 .results__block--negative {
     color: #a11111;
 }
+
+.queryLoader {
+    height: 4em;
+    margin-top: 2em;
+}

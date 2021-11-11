@@ -7,6 +7,8 @@ import {useState} from "react";
 
 const beaconHandler = new FakeBeaconHandler()
 
+// const beaconHandler = new BeaconHandler();
+
 function QueryBoxMeasurement() {
     return <form className={"queryBox"}>
         <img className={"queryBox__icon"} src={clipboard} alt={"clipboard-icon"}/>
@@ -65,10 +67,10 @@ function QueryBoxValue() {
 
 function QueryBoxDisease() {
 
-    const [diseaseCode, setDiseaseCode] = useState();
-    const [genderCode, setGenderCode] = useState();
-    const [onsetStart, setOnsetStart] = useState();
-    const [onsetEnd, setOnsetEnd] = useState();
+    const [diseaseCode, setDiseaseCode] = useState("SNOMED:1234567");
+    const [genderCode, setGenderCode] = useState("NCIT:C16576");
+    const [onsetStart, setOnsetStart] = useState(0);
+    const [onsetEnd, setOnsetEnd] = useState(99);
     const [loading, setLoading] = useState(false);
     const [resultCount, setResultCount] = useState(null);
 
@@ -77,7 +79,7 @@ function QueryBoxDisease() {
         setLoading(true);
         setResultCount(null);
         beaconHandler.requestDisease(diseaseCode, onsetStart, onsetEnd, genderCode).then((body) => {
-            setResultCount(body.count);
+            setResultCount(body.responseSummary.numTotalResults);
             setLoading(false);
         });
     }
@@ -88,8 +90,8 @@ function QueryBoxDisease() {
         <div className={"inputGroup"}>
 
             <label>disease</label>
-            <select className={"inputGroup__select"}>
-                <option>COVID-19</option>
+            <select value={diseaseCode} onChange={(e) => setDiseaseCode(diseaseCode)} className={"inputGroup__select"}>
+                <option value={"SNOMED:1234567"}>COVID-19</option>
             </select>
         </div>
         <div className={"inputGroup"}>
@@ -102,18 +104,20 @@ function QueryBoxDisease() {
         <div className={"inputGroup"}>
 
             <label>value</label>
-            <select className={"inputGroup__select"}>
-                <option>Female</option>
-                <option>Male</option>
-                <option>Other</option>
+            <select value={genderCode} onChange={(e) => setGenderCode(e.target.value)} className={"inputGroup__select"}>
+                <option value={"NCIT:C16576"}>Female</option>
+                <option value={"NCIT:C20197"}>Male</option>
+                <option value={"NCIT:C17998"}>Unknown</option>
             </select>
         </div>
         <div className={"inputGroup"}>
             <label>onset age range</label>
             <div className={"inputGroup__inline"}>
-                <input className={"inputGroup__inputSmall"} type={"number"}/>
+                <input min="0" onChange={(e) => setOnsetStart(e.target.value)} value={onsetStart}
+                       className={"inputGroup__inputSmall"} type={"number"}/>
                 <span>to</span>
-                <input className={"inputGroup__inputSmall"} type={"number"}/>
+                <input min="0" onChange={(e) => setOnsetEnd(e.target.value)} value={onsetEnd}
+                       className={"inputGroup__inputSmall"} type={"number"}/>
             </div>
         </div>
         <div className={"inputGroup"}>
@@ -129,7 +133,7 @@ function QueryBoxDisease() {
             <input onClick={onSubmit} className={"button"} type={"submit"} value={"search"}/>
         </div>
         {
-            loading && <div className="loader">Loading...</div>
+            loading && <div className={"queryLoader"}><p className="loader">Loading...</p></div>
         }
         {
             resultCount !== null && <div className={"results"}><h4 className={"results__title"}>Results</h4>
