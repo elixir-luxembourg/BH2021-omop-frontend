@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BH2021-omop-frontend/static/css/main.9b15e131.chunk.css",
-    "main.js": "/BH2021-omop-frontend/static/js/main.783fa261.chunk.js",
-    "main.js.map": "/BH2021-omop-frontend/static/js/main.783fa261.chunk.js.map",
+    "main.js": "/BH2021-omop-frontend/static/js/main.4c3aefbf.chunk.js",
+    "main.js.map": "/BH2021-omop-frontend/static/js/main.4c3aefbf.chunk.js.map",
     "runtime-main.js": "/BH2021-omop-frontend/static/js/runtime-main.6e7c989f.js",
     "runtime-main.js.map": "/BH2021-omop-frontend/static/js/runtime-main.6e7c989f.js.map",
     "static/js/2.9509c7d0.chunk.js": "/BH2021-omop-frontend/static/js/2.9509c7d0.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.6e7c989f.js",
     "static/js/2.9509c7d0.chunk.js",
     "static/css/main.9b15e131.chunk.css",
-    "static/js/main.783fa261.chunk.js"
+    "static/js/main.4c3aefbf.chunk.js"
   ]
 }
