@@ -173,3 +173,20 @@
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.results__title {
+    font-size: 1.4rem;
+}
+
+.results__count {
+    display: block;
+    font-size: 5rem;
+}
+
+.results__block--positive {
+    color: #52A38A;
+}
+
+.results__block--negative {
+    color: #a11111;
+}

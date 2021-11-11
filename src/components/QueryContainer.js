@@ -2,6 +2,10 @@ import './QueryContainer.css';
 import clipboard from '../images/clipboard.svg';
 import dash from '../images/dash.svg';
 import syringe from '../images/syringe.svg';
+import {FakeBeaconHandler} from "../service";
+import {useState} from "react";
+
+const beaconHandler = new FakeBeaconHandler()
 
 function QueryBoxMeasurement() {
     return <form className={"queryBox"}>
@@ -60,6 +64,24 @@ function QueryBoxValue() {
 }
 
 function QueryBoxDisease() {
+
+    const [diseaseCode, setDiseaseCode] = useState();
+    const [genderCode, setGenderCode] = useState();
+    const [onsetStart, setOnsetStart] = useState();
+    const [onsetEnd, setOnsetEnd] = useState();
+    const [loading, setLoading] = useState(false);
+    const [resultCount, setResultCount] = useState(null);
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+        setResultCount(null);
+        beaconHandler.requestDisease(diseaseCode, onsetStart, onsetEnd, genderCode).then((body) => {
+            setResultCount(body.count);
+            setLoading(false);
+        });
+    }
+    const resultClass = resultCount !== null && resultCount > 0 ? 'results__block results__block--positive' : 'results__block  results__block--negative';
     return <form className={"queryBox"}>
         <img className={"queryBox__icon"} src={syringe} alt={"dash-icon"}/>
         <h3 className={"queryBox__title"}>For a specific disease and onset age</h3>
@@ -104,9 +126,16 @@ function QueryBoxDisease() {
         </div>
 
         <div className={"inputSubmitButtonGroup"}>
-            <input className={"button"} type={"submit"} value={"search"}/>
+            <input onClick={onSubmit} className={"button"} type={"submit"} value={"search"}/>
         </div>
-
+        {
+            loading && <div className="loader">Loading...</div>
+        }
+        {
+            resultCount !== null && <div className={"results"}><h4 className={"results__title"}>Results</h4>
+                <p className={resultClass}><span className={'results__count'}>{resultCount}</span> individuals found</p>
+            </div>
+        }
     </form>;
 }
 
