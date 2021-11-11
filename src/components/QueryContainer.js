@@ -1,12 +1,15 @@
 import './QueryContainer.css';
-
+import clipboard from '../images/clipboard.svg';
+import dash from '../images/dash.svg';
 
 function QueryBoxMeasurement() {
     return <form className={"queryBox"}>
+        <img className={"queryBox__icon"} src={clipboard} alt={"clipboard-icon"}/>
         <h3 className={"queryBox__title"}>Having a specific measurement</h3>
         <div className={"inputGroup"}><label>measurement</label>
             <select>
                 <option>Oxygen saturation</option>
+                <option>Heart rate</option>
             </select>
         </div>
         <div className={"inputGroup"}>
@@ -20,6 +23,7 @@ function QueryBoxMeasurement() {
 
 function QueryBoxValue() {
     return <form className={"queryBox"}>
+        <img className={"queryBox__icon"} src={dash} alt={"dash-icon"}/>
         <h3 className={"queryBox__title"}>With a specific value</h3>
         <div className={"inputGroup"}>
 

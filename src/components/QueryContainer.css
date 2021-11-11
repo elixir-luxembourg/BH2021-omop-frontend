@@ -12,6 +12,13 @@
 
 }
 
+.queryBox__icon {
+    width: 3em;
+    position: absolute;
+    top: -1.2em;
+    right: -0.7em;
+}
+
 .queryBoxGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -19,6 +26,7 @@
 }
 
 .queryBox {
+    position: relative;
     background-color: #F1F8F6;
     text-align: center;
     padding: 2em 4em;
