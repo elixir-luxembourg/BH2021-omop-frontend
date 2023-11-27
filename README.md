@@ -1,5 +1,9 @@
 # Beacon-OMOP ProofOfConcept Frontend
 
+## Demo
+
+https://elixir-luxembourg.github.io/BH2021-omop-frontend/
+
 ## Configuration
 
 The configuration file is located at `src/beaconConfig.js`. It contains the following fields:
