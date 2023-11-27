@@ -4,6 +4,7 @@ import dash from '../images/dash.svg';
 import syringe from '../images/syringe.svg';
 import {FakeBeaconHandler} from "../service";
 import {useState} from "react";
+import {DISEASES_LIST} from "../beaconConfig";
 
 const beaconHandler = new FakeBeaconHandler()
 
@@ -90,8 +91,12 @@ function QueryBoxDisease() {
         <div className={"inputGroup"}>
 
             <label>disease</label>
-            <select value={diseaseCode} onChange={(e) => setDiseaseCode(diseaseCode)} className={"inputGroup__select"}>
-                <option value={"SNOMED:1234567"}>COVID-19</option>
+            <select value={diseaseCode} onChange={(e) => setDiseaseCode(e.target.value)} className={"inputGroup__select"}>
+                {
+                    DISEASES_LIST.map((disease) => {
+                        return <option selected={diseaseCode == disease.code} value={disease.code}>{disease.label}</option>;
+                    })
+                }
             </select>
         </div>
         <div className={"inputGroup"}>

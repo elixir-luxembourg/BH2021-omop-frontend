@@ -1,5 +1,9 @@
 export const BEACON_BASE_URL = "http://localhost"
-
+export const DISEASES_LIST = [
+    {code: "SNOMED:840539006", label: "COVID-19"},
+    {code: "SNOMED:49049000:", label: "Parkinson's Disease"},
+    {code: "SNOMED:26929004", label: "Alzheimer"},
+]
 export const REQUEST_DISEASE_TEMPLATE = {
     "$schema": "../beaconRequestBody.json",
     "meta": {
