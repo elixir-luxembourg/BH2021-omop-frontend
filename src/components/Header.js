@@ -4,8 +4,8 @@ import electricTorch from '../images/electrictorch.svg';
 import chart from '../images/chart.svg';
 import bottle from '../images/bottle.svg';
 import clinical from '../images/clinical.svg';
-import bottomImage from '../images/bottom_header.svg';
 import elixirLogin from '../images/login-button-orange-small.png';
+import BottomHeader from "./icons/BottomHeader";
 
 export function Header() {
     return <header className={"header"}>
@@ -19,6 +19,6 @@ export function Header() {
             <img className={"lightIcons__clinical"} src={clinical} alt={"clinical icon"}/>
         </div>
         <img className={"header__elixirLogin"} src={elixirLogin} alt={"elixir login"}/>
-        <img className={"header__bottomImage"} src={bottomImage} alt={"separator"}/>
+        <BottomHeader className={"header__bottomImage"} alt={"separator"} />
     </header>;
 }
