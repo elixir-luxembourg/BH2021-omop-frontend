@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Beacon-OMOP ProofOfConcept Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Configuration
+
+The configuration file is located at `src/beaconConfig.js`. It contains the following fields:
+- `BEACON_BASE_URL`: The base URL of the Beacon API. This is used to construct the URLs for the API calls.
+- `DISEASES_LIST`: A list of diseases to be displayed in the dropdown menu. Each disease is an object with the following fields:
+  - `code`: The ontology code of the disease.
+  - `label`: The label of the disease, used for display in the dropdown menu.
+- `REQUEST_DISEASE_TEMPLATE`: The request template. This is used to construct the request body for the API call. The template is a string with placeholders for the disease code and the filters.
 
 ## Available Scripts
 
@@ -39,32 +46,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+See [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
