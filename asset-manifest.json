@@ -1,33 +1,24 @@
 {
   "files": {
-    "main.css": "/BH2021-omop-frontend/static/css/main.962a9d58.chunk.css",
-    "main.js": "/BH2021-omop-frontend/static/js/main.0abeed98.chunk.js",
-    "main.js.map": "/BH2021-omop-frontend/static/js/main.0abeed98.chunk.js.map",
-    "runtime-main.js": "/BH2021-omop-frontend/static/js/runtime-main.a1a07308.js",
-    "runtime-main.js.map": "/BH2021-omop-frontend/static/js/runtime-main.a1a07308.js.map",
-    "static/js/2.2466f728.chunk.js": "/BH2021-omop-frontend/static/js/2.2466f728.chunk.js",
-    "static/js/2.2466f728.chunk.js.map": "/BH2021-omop-frontend/static/js/2.2466f728.chunk.js.map",
-    "static/js/3.59cf66be.chunk.js": "/BH2021-omop-frontend/static/js/3.59cf66be.chunk.js",
-    "static/js/3.59cf66be.chunk.js.map": "/BH2021-omop-frontend/static/js/3.59cf66be.chunk.js.map",
+    "main.css": "/BH2021-omop-frontend/static/css/main.0f82269e.css",
+    "main.js": "/BH2021-omop-frontend/static/js/main.e763aec7.js",
+    "static/js/496.8799d8da.chunk.js": "/BH2021-omop-frontend/static/js/496.8799d8da.chunk.js",
+    "static/media/clinical.svg": "/BH2021-omop-frontend/static/media/clinical.5ab20d084fadd8e95bc83d25c017133e.svg",
+    "static/media/chart.svg": "/BH2021-omop-frontend/static/media/chart.5e1380f63bfc388ebb4d636f59128166.svg",
+    "static/media/clipboard.svg": "/BH2021-omop-frontend/static/media/clipboard.a85eae0fdd1e69580687499a61f84d35.svg",
+    "static/media/syringe.svg": "/BH2021-omop-frontend/static/media/syringe.f684984a2a91bc556232257d06852118.svg",
+    "static/media/dash.svg": "/BH2021-omop-frontend/static/media/dash.efd28fb2c91bf19b34c606e9fa080d77.svg",
+    "static/media/electrictorch_footer.svg": "/BH2021-omop-frontend/static/media/electrictorch_footer.8cb8a29db2f6305828650c5a9be4d608.svg",
+    "static/media/electrictorch.svg": "/BH2021-omop-frontend/static/media/electrictorch.22aac381299c9c6d4c01663243e036b7.svg",
+    "static/media/bottle.svg": "/BH2021-omop-frontend/static/media/bottle.b15253869df84bd9d3090c2e8aed7ed8.svg",
     "index.html": "/BH2021-omop-frontend/index.html",
-    "static/css/main.962a9d58.chunk.css.map": "/BH2021-omop-frontend/static/css/main.962a9d58.chunk.css.map",
-    "static/js/2.2466f728.chunk.js.LICENSE.txt": "/BH2021-omop-frontend/static/js/2.2466f728.chunk.js.LICENSE.txt",
-    "static/media/QueryContainer.css": "/BH2021-omop-frontend/static/media/arrow.432c466a.svg",
-    "static/media/bottle.b1525386.svg": "/BH2021-omop-frontend/static/media/bottle.b1525386.svg",
-    "static/media/bottom_header.005796a0.svg": "/BH2021-omop-frontend/static/media/bottom_header.005796a0.svg",
-    "static/media/chart.5e1380f6.svg": "/BH2021-omop-frontend/static/media/chart.5e1380f6.svg",
-    "static/media/clinical.5ab20d08.svg": "/BH2021-omop-frontend/static/media/clinical.5ab20d08.svg",
-    "static/media/clipboard.a85eae0f.svg": "/BH2021-omop-frontend/static/media/clipboard.a85eae0f.svg",
-    "static/media/dash.efd28fb2.svg": "/BH2021-omop-frontend/static/media/dash.efd28fb2.svg",
-    "static/media/electrictorch.22aac381.svg": "/BH2021-omop-frontend/static/media/electrictorch.22aac381.svg",
-    "static/media/electrictorch_footer.8cb8a29d.svg": "/BH2021-omop-frontend/static/media/electrictorch_footer.8cb8a29d.svg",
-    "static/media/syringe.f684984a.svg": "/BH2021-omop-frontend/static/media/syringe.f684984a.svg",
-    "static/media/twitter.f505255f.svg": "/BH2021-omop-frontend/static/media/twitter.f505255f.svg"
+    "static/media/arrow.svg": "/BH2021-omop-frontend/static/media/arrow.432c466ae755ac09c667.svg",
+    "main.0f82269e.css.map": "/BH2021-omop-frontend/static/css/main.0f82269e.css.map",
+    "main.e763aec7.js.map": "/BH2021-omop-frontend/static/js/main.e763aec7.js.map",
+    "496.8799d8da.chunk.js.map": "/BH2021-omop-frontend/static/js/496.8799d8da.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.a1a07308.js",
-    "static/js/2.2466f728.chunk.js",
-    "static/css/main.962a9d58.chunk.css",
-    "static/js/main.0abeed98.chunk.js"
+    "static/css/main.0f82269e.css",
+    "static/js/main.e763aec7.js"
   ]
 }
